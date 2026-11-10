@@ -1,0 +1,33 @@
+{
+  "name": "@pipeworx/mcp-asx-announcements",
+  "version": "0.1.0",
+  "description": "ASX company announcements, for Australian listed companies.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "mcp-asx-announcements": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "asx-announcements"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pipeworx-io/mcp-asx-announcements.git"
+  },
+  "mcpName": "io.github.pipeworx-io/asx-announcements",
+  "pipeworx": {
+    "mode": "gateway",
+    "slug": "asx-announcements",
+    "gatewaySlug": "asx-announcements",
+    "sourceHash": "v1-b24b07e367a8886706bba643f5a1de13368c9cbf21a1f064760f763be69d4f8b",
+    "sourceCommit": "ac4ecd7f0cd0af9ede3d29b075cdb2278008c431"
+  }
+}
